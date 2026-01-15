@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mis 15 Años</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- BOTÓN MÚSICA -->
+  <button id="musicBtn" class="music-btn">▶ Música</button>
+
+  <!-- AUDIO -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>Mis 15 Años 🌸</h1>
+    <p>Falta muy poquito para un día inolvidable ✨</p>
+  </header>
+
+  <!-- MENSAJE -->
+  <section class="section mensaje">
+    <p>
+      🌸 Acompañame a este bello momento para mí 🌸  
+      <br>
+      Quiero compartir con vos una noche llena de alegría, amor y sueños.
+    </p>
+  </section>
+
+  <!-- CONTADOR -->
+  <section class="section">
+    <h2>Faltan</h2>
+    <div class="countdown">
+      <div><span id="days">0</span><small>Días</small></div>
+      <div><span id="hours">0</span><small>Horas</small></div>
+      <div><span id="minutes">0</span><small>Minutos</small></div>
+      <div><span id="seconds">0</span><small>Segundos</small></div>
+    </div>
+  </section>
+
+  <!-- CELEBRACIÓN -->
+  <section class="section hidden" id="celebracion">
+    <h2 class="fiesta">🎉 HOY ES EL GRAN DÍA 🎉</h2>
+    <p class="fiesta-sub">Felices 15 años 💖✨</p>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="section">
+    <h2>Momentos Especiales 💕</h2>
+    <div class="gallery">
+      <figure>
+        <img src="assets/img/foto1.jpg">
+        <figcaption>Momentos que guardo en mi corazón 💖</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/foto2.jpg">
+        <figcaption>Sonrisas que cuentan historias ✨</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/foto3.jpg">
+        <figcaption>Un paso más hacia mis sueños 🌸</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/foto4.jpg">
+        <figcaption>Gracias por ser parte de mi vida 💕</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="section ubicacion">
+    <h2>📍 Lugar del Evento</h2>
+    <p>
+      CAMPING AMUDOCH
+      <br>
+     RUTA N° 95 
+      <br>
+      31 de Mayo de 2026 – 21:00 hs
+    </p>
+    <a href="https://www.google.com/maps?rlz=1C1CHBF_esAR1161AR1161&gs_lcrp=EgZjaHJvbWUqDwgAEAAYQxjjAhiABBiKBTIPCAAQABhDGOMCGIAEGIoFMhIIARAuGEMYrwEYxwEYgAQYigUyBggCEEUYOTIQCAMQLhivARjHARiABBiYBTIQCAQQLhivARjHARiABBiYBTITCAUQLhivARjHARiABBiYBRiZBTIQCAYQLhivARjHARiABBiYBTIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQ1MDNqMGo3qAIIsAIB8QXJ5x9vjDQyhfEFyecfb4w0MoU&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KcnOqrsmB0eUMbnZTVvVj9ER&daddr=RN95,+Chaco" target="_blank" class="map-btn">
+      Ver ubicación en Google Maps
+    </a>
+  </section>
+
+  <!-- CONFETTI -->
+  <canvas id="confetti"></canvas>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>16 de Mayo de 2026 💗</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
