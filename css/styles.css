@@ -1,32 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap');
 
-/* ================= RESET ================= */
+/* RESET */
 * {
   box-sizing: border-box;
 }
 
-/* ================= BODY – BOSQUE ENCANTADO ================= */
+/* BODY – BOSQUE ENCANTADO */
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-
-  /* CAPAS DEL BOSQUE */
   background:
-    /* luz mágica central */
     radial-gradient(circle at center, rgba(255,240,246,0.85), transparent 60%),
-
-    /* copas de árboles */
     radial-gradient(circle at top, rgba(120,170,140,0.35), transparent 55%),
-
-    /* profundidad del bosque */
     linear-gradient(180deg, #2f4f3e 0%, #5f8f73 40%, #fde2ec 100%);
-
   color: #6b2c3a;
   overflow-x: hidden;
   position: relative;
 }
 
-/* ================= NIEBLA DEL BOSQUE ================= */
+/* NIEBLA */
 body::before {
   content: "";
   position: fixed;
@@ -37,7 +29,7 @@ body::before {
   z-index: -5;
 }
 
-/* ================= VIÑETA OSCURA (PROFUNDIDAD) ================= */
+/* VIÑETA */
 body::after {
   content: "";
   position: fixed;
@@ -46,7 +38,7 @@ body::after {
   z-index: -6;
 }
 
-/* ================= CANVAS FLORES ================= */
+/* CANVAS */
 #flowerCanvas {
   position: fixed;
   inset: 0;
@@ -54,7 +46,7 @@ body::after {
   pointer-events: none;
 }
 
-/* ================= FLORES GRANDES ESQUINAS ================= */
+/* FLORES ESQUINAS */
 .corner-flower {
   position: fixed;
   width: 300px;
@@ -73,12 +65,12 @@ body::after {
 .bottom-right { bottom: -60px; right: -60px; transform: rotate(-22deg); }
 
 @keyframes floatFlower {
-  0% { transform: translateY(0) scale(1) rotate(var(--r,0deg)); }
-  50% { transform: translateY(-25px) scale(1.03) rotate(var(--r,0deg)); }
-  100% { transform: translateY(0) scale(1) rotate(var(--r,0deg)); }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
 }
 
-/* ================= LUCES MAGICAS ================= */
+/* LUCES MAGICAS */
 .magic-lights {
   position: fixed;
   inset: 0;
@@ -96,7 +88,7 @@ body::after {
   100% { filter: blur(0px); }
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 .header {
   text-align: center;
   padding: 150px 20px 110px;
@@ -106,19 +98,10 @@ body::after {
   font-family: 'Great Vibes', cursive;
   font-size: 5rem;
   color: #f5c6d6;
-  margin: 0;
-  text-shadow:
-    0 0 20px rgba(255,200,220,0.6),
-    0 10px 30px rgba(0,0,0,0.4);
-  animation: fadeInDown 2.5s ease;
+  text-shadow: 0 0 25px rgba(255,200,220,0.6);
 }
 
-.header p {
-  font-size: 1.25rem;
-  opacity: 0.9;
-}
-
-/* ================= SECCIONES (CLAROS DEL BOSQUE) ================= */
+/* SECCIONES */
 .section {
   max-width: 900px;
   margin: 90px auto;
@@ -127,12 +110,10 @@ body::after {
   border-radius: 50px;
   backdrop-filter: blur(10px);
   position: relative;
-  box-shadow:
-    0 30px 60px rgba(0,0,0,0.25),
-    inset 0 0 40px rgba(255,255,255,0.6);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
 }
 
-/* ================= MARCO FLORAL / ENREDADERA ================= */
+/* MARCO FLORAL */
 .floral-frame::before {
   content: "";
   position: absolute;
@@ -141,31 +122,28 @@ body::after {
   background: url("../assets/images/flower.png") repeat;
   background-size: 110px;
   opacity: 0.25;
-  filter: blur(0.5px);
   z-index: -1;
 }
 
-/* ================= TITULOS ================= */
+/* TITULOS */
 .section h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 28px;
   color: #a94c6a;
 }
 
-/* ================= TEXTO ================= */
+/* TEXTO */
 .section p {
+  text-align: center;
   font-size: 1.1rem;
   line-height: 1.8;
-  text-align: center;
 }
 
-/* ================= CONTADOR ================= */
+/* CONTADOR */
 .countdown {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 35px;
 }
 
 .time-box {
@@ -173,23 +151,18 @@ body::after {
   padding: 20px 24px;
   border-radius: 25px;
   min-width: 95px;
+  text-align: center;
   box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 50px 20px;
   opacity: 0.8;
 }
 
-/* ================= ANIMACIONES ================= */
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .corner-flower {
     width: 200px;
@@ -206,5 +179,3 @@ body::after {
     padding: 45px 30px;
   }
 }
-
-
