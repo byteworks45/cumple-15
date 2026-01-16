@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mis 15</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Mis 15 ✨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- FLORES ESQUINAS -->
-  <div class="corner-flower top-left"></div>
-  <div class="corner-flower top-right"></div>
-  <div class="corner-flower bottom-left"></div>
-  <div class="corner-flower bottom-right"></div>
+  <!-- ENREDADERAS -->
+  <div class="vine left"></div>
+  <div class="vine right"></div>
 
-  <!-- LUCES MAGICAS -->
-  <div class="magic-lights"></div>
+  <!-- LLUVIA DE ROSAS -->
+  <div id="roses"></div>
 
-  <!-- CANVAS FLORES -->
-  <canvas id="flowerCanvas"></canvas>
+  <!-- MUSICA -->
+  <audio id="music" src="assets/music/musica.mp3" loop></audio>
+  <button id="musicBtn">▶ Música</button>
 
   <!-- HEADER -->
-  <header class="header">
-    <h1>Martu</h1>
-    <p>Mis 15 años ✨</p>
+  <header class="hero">
+    <h1>Mis 15 Años</h1>
+    <p>16 de Mayo de 2026</p>
   </header>
 
-  <!-- SECCION MENSAJE -->
-  <section class="section floral-frame">
-    <h2>Te invito a compartir este momento</h2>
-    <p>
-      Acompañame a vivir uno de los días más importantes de mi vida,
-      rodeada de quienes quiero 💕
-    </p>
+  <!-- CONTADOR -->
+  <section class="section">
+    <h2>Falta muy poco…</h2>
+    <div id="countdown"></div>
   </section>
 
-  <!-- CONTADOR -->
-  <section class="section floral-frame">
-    <h2>Falta muy poquito…</h2>
+  <!-- MENSAJE -->
+  <section class="section">
+    <h2>Mensaje</h2>
+    <p>Te invito a compartir una noche inolvidable llena de magia y alegría.</p>
+  </section>
 
-    <div class="countdown">
-      <div class="time-box">
-        <div id="days">00</div>
-        <small>Días</small>
-      </div>
-      <div class="time-box">
-        <div id="hours">00</div>
-        <small>Horas</small>
-      </div>
-      <div class="time-box">
-        <div id="minutes">00</div>
-        <small>Minutos<
+  <!-- ALBUM -->
+  <section class="section">
+    <h2>Momentos</h2>
+    <div class="gallery">
+      <img src="assets/images/foto1.jpg">
+      <img src="assets/images/foto2.jpg">
+    </div>
+  </section>
 
+  <!-- VESTIMENTA -->
+  <section class="section">
+    <h2>Vestimenta sugerida</h2>
+    <p>Elegante / Formal</p>
+  </section>
 
+  <!-- UBICACION -->
+  <section class="section">
+    <h2>Evento</h2>
+    <p>🕘 21:00 hs</p>
+    <a class="btn" target="_blank"
+       href="https://www.google.com/maps/search/?api=1&query=Salon+de+Eventos">
+       Ver ubicación
+    </a>
+  </section>
 
+  <!-- CONFIRMACION -->
+  <section class="section">
+    <h2>Confirmar asistencia</h2>
+    <textarea placeholder="Escribí tu mensaje..."></textarea>
+    <button class="btn">Enviar</button>
+  </section>
 
-
-
+  <script src="js/script.js"></script>
+</body>
+</html>
