@@ -11,8 +11,8 @@ body {
   font-family: 'Playfair Display', serif;
   background:
     radial-gradient(circle at top, rgba(255,240,246,0.9), transparent 60%),
-    linear-gradient(180deg, #fdf0f5, #f3dce6, #e6f0ea);
-  color: #5b2a3c;
+    linear-gradient(180deg, #fff1f6, #fde2ec);
+  color: #6b2c3a;
   overflow-x: hidden;
   position: relative;
 }
@@ -184,4 +184,5 @@ body::before {
     padding: 40px 25px;
   }
 }
+
 
